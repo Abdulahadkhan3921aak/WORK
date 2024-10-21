@@ -1,0 +1,46 @@
+body{
+    height: 90%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 85px;
+}
+
+.flash-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+img {
+    max-width: calc(100%); /* Adjust the maximum width as needed */
+    max-height: calc(100%); /* Adjust the maximum height as needed */
+}
+
+.flash-card {
+    width: calc(20% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}

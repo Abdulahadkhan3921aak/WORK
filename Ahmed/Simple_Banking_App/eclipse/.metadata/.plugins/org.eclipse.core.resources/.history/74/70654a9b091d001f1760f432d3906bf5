@@ -1,0 +1,68 @@
+package de.buw.se;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+
+public class DataStoreSql {
+  
+    //name of dataset
+    private static final String FILE_NAME = "src/main/resources/balance";
+  
+    private static Statement getSqlStatement() {
+      try {
+        Class.forName("org.h2.Driver");
+        Connection conn = DriverManager.getConnection("jdbc:h2:./" + FILE_NAME, "", "");
+  
+        Statement stmt = conn.createStatement();
+  
+        String createQ = "CREATE TABLE IF NOT EXISTS Balance"
+            + "(ID INT PRIMARY KEY, BALANCE DOUBLE)";
+        stmt.executeUpdate(createQ);
+        return stmt;
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+      return null;
+    }
+  
+    // get balance value from database
+    public static double getBalance() {
+      try {
+        Statement stmt = getSqlStatement();
+        ResultSet selectRS = stmt.executeQuery("SELECT BALANCE FROM Balance");
+        if (selectRS.next()) {
+          //return balance 
+          return selectRS.getDouble("BALANCE");
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+      return 0; // return 0 if balance is empty
+    }
+  
+    //store newBalance
+    public static void setBalance(double newBalance) {
+      try {
+        Statement stmt = getSqlStatement();
+        String updateSql;
+  
+        // Check if there's an existing record
+        ResultSet selectRS = stmt.executeQuery("SELECT * FROM Balance");
+        if (selectRS.next()) {
+          updateSql = "UPDATE Balance SET BALANCE = " + newBalance;
+        } else {
+          // If no record exists, insert a new row
+          updateSql = "INSERT INTO Balance (ID, BALANCE) VALUES (1, " + newBalance + ")";
+        }
+        stmt.executeUpdate(updateSql);
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+  

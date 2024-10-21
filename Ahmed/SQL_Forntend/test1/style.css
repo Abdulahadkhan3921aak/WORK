@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+}
+
+form {
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}

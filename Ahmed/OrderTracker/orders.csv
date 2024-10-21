@@ -1,0 +1,48 @@
+﻿orderID,item,quantity,price,branch,status
+1,FRIES,2,6.4,NTU,ready
+1,pepsi,3,6.3,NTU,ready
+2,CAJUN FISH,3,16.8,JP,ready
+2,chicken nugget,2,13.8,JP,ready
+3,3PC set meal,2,20.8,JE,new
+3,COLE SLAW,1,2.7,JE,new
+4,chicken nugget,4,27.6,JP,ready
+4,pepsi,5,10.5,JP,ready
+5,FRIES,1,3.2,NTU,completed
+5,COLE SLAW,2,5.4,NTU,completed
+6,FRIES,2,6.4,NTU,new
+6,pepsi,1,2.1,NTU,new
+7,chicken nugget,3,19.8,JP,ready
+7,COLE SLAW,1,2.7,JP,ready
+8,3PC set meal,1,9.9,NTU,completed
+8,CAJUN FISH,2,11.2,NTU,completed
+9,FRIES,3,9.6,NTU,new
+9,chicken nugget,1,6.6,NTU,new
+10,FRIES,2,6.4,NTU,new
+10,COLE SLAW,1,2.7,NTU,new
+10,pepsi,3,6.3,NTU,new
+11,chicken nugget,4,27.6,JP,ready
+11,CAJUN FISH,2,11.2,JP,ready
+12,3PC set meal,1,9.9,NTU,completed
+12,COLE SLAW,2,5.4,NTU,completed
+12,pepsi,1,2.1,NTU,completed
+13,FRIES,3,9.6,JE,new
+13,chicken nugget,2,13.8,JE,new
+14,3PC set meal,2,20.8,JP,new
+14,pepsi,1,2.1,JP,new
+14,COLE SLAW,1,2.7,JP,new
+15,chicken nugget,1,6.6,NTU,ready
+15,FRIES,2,6.4,NTU,ready
+15,pepsi,2,4.2,NTU,ready
+16,3PC set meal,3,31.2,JE,new
+16,COLE SLAW,2,5.4,JE,new
+16,CAJUN FISH,1,5.6,JE,new
+17,chicken nugget,5,34.5,JP,completed
+17,FRIES,3,9.6,JP,completed
+18,FRIES,1,3.2,NTU,new
+18,pepsi,2,4.2,NTU,new
+18,3PC set meal,1,9.9,NTU,new
+19,FRIES,2,6.4,JP,ready
+19,COLE SLAW,3,8.1,JP,ready
+20,CAJUN FISH,2,11.2,JE,completed
+20,pepsi,4,8.4,JE,completed
+20,chicken nugget,2,13.2,JE,completed
